@@ -1,0 +1,50 @@
+{% extends 'registration_layout.html' %}
+
+  {% block body %}
+  {{ super() }}
+  <p class="display-4"> Welcome back, Please login. </P>
+
+  {% endblock %}
+
+  {% block content %}
+    <!-- forms -->
+    <form action="/login" method="POST">
+      <div id="signIn" class="container">
+        <div class="input-group input-group-md col-lg-9 offset-1 pt-4 pl-5 ">
+          <i class="fa fa-user fa-fw fa-3x"></i>
+          <input name="email" type="email" class="form-control" placeholder=" Enter email">
+        </div>
+
+        <div class="input-group input-group-md col-lg-9 offset-lg-1 pl-5 pt-3 pb-4">
+          <i class="fa fa-lock fa-fw fa-3x"></i>
+          <input name="password" type="password" class="form-control" id="password" placeholder=" Password">
+        </div>
+        <!-- /.forms -->
+
+
+        <!-- confirmation buttons -->
+        <div class="row input-group done pb-3 pt-3">
+
+          <div class="lostPass mr-5">
+            <a href="/account/profile/changePassword"> Forgot password ? </a>
+          </div>
+
+          <div class="col-xs-5 offset-4 pt-2 pl-5 pt-4">
+            <button class="btn btn-xs btn-outline-light"> LogIn </button>
+          </div>
+
+        </div>
+        <!-- confirmation buttons  -->
+
+
+        <!-- checkBox -->
+        <div class="form-group pl-1">
+          <input type="checkbox"> Remember me
+        </div>
+        <!-- /.checkBox -->
+
+      </div>
+    </forms>
+    <!-- /.forms -->
+
+  {% endblock %}

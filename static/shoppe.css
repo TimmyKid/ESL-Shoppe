@@ -1,0 +1,66 @@
+html,body
+{
+  background-color: lavender ;
+  max-width:100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+#sec_2
+{
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0, 0, 0, 0.5)),url("img/pexels-photo-277017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sec_4 .carousel-inner img
+{
+  height: 60vh;
+}
+
+.logo img
+{
+  height: 40px;
+  margin:-1vh 0 0 4vh;a
+}
+
+nav ul li, nav ul
+{
+  padding: 0 8px;
+}
+.right
+{
+  margin-left: 22vh;
+}
+
+
+/*--media queries--*/
+/* //Extra-small devices (landscape phones, 320px and above) */
+@media (min-width: 375px)
+{
+
+}
+
+
+/* //small devices (landscape phones, 576px and up) */
+@media (min-width: 576px)
+{
+
+}
+
+/* //Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+}
+
+/* //Large devices (desktops,992px and up) */
+@media (min-width: 992px)
+{
+
+}
+
+/* //Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+
+}

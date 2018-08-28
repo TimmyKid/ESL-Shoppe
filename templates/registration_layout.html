@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for("static", filename="logIn.css") }}">
+{% endblock %}
+
+  {% block body %}
+  <!-- first section -->
+  <section id="firstSec">
+
+  <div class="container">
+
+    <!-- intro text -->
+    <div class="hello pt-4"> <h3 class="display-4 text-light"> Welcome, <br> Please register with Us! </h3>
+    </div>
+    <!-- /intro text -->
+
+    <!-- card-padding style div -->
+    <div class="offset-lg-2">
+      <div id="mainCard" class="card rounded">
+
+        <!-- card title -->
+        <div class="card-title text-center">
+
+          <!-- ALT <img class="userIcon " src="img/user-unisex-512.png" alt="cardImage"> -->
+          <div class="userIcon text-center"><i class="fa fa-user fa-fw fa-3x"></i></div>
+
+          <!-- buttons options -->
+            <div class="row pb-5">
+              <div class="btn btn-light col-lg-6 col-md-6 col-sm-6 pt-2">
+                <a href="/signIn"> <h2 class="pt-2 pb-2 text-dark"> Sign In </h2> </a>
+              </div>
+
+              <div class="btn btn-dark col-lg-6 col-md-6 col-sm-6 pt-2">
+                <a href="/register"> <h2 class="pt-2 pb-2 text-light"> Create Account </h2> </a>
+              </div>
+            </div>
+          <!-- /.buttons for options -->
+
+        </div>
+        <!-- /.card title -->
+
+        <!-- card body -->
+          <div class="card-body">
+
+            {% block content %}
+            {% endblock %}
+
+          </div>
+        <!-- /.cardBody -->
+
+      </div>
+      <!-- /.mainCard -->
+
+      </div> <!--/.card-padding style div -->
+
+    </div> <!-- /container div -->
+
+  </section>
+  <!-- /.section -->
+
+  {% endblock %}
